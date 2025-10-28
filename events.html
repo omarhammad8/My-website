@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>كل الفعاليات - دليل فعاليات المدينة</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                    دليل فعاليات المدينة
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="events.html">كل الفعاليات</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-4">
+        <h1 class="h4 mb-4">كل الفعاليات</h1>
+        <!-- Filter toolbar -->
+        <div class="row g-3 mb-4">
+            <div class="col-md-6">
+                <input type="text" id="searchInput" class="form-control" placeholder="بحث بالعنوان...">
+            </div>
+            <div class="col-md-3">
+                <select id="categorySelect" class="form-select">
+                    <option value="">جميع التصنيفات</option>
+                    <option value="culture">ثقافة</option>
+                    <option value="sport">رياضة</option>
+                    <option value="music">موسيقى</option>
+                    <option value="family">عائلي</option>
+                </select>
+            </div>
+        </div>
+        <!-- Events listing -->
+        <div class="row g-4">
+            <!-- Event card 1 -->
+            <div class="col-md-4 event-card" data-title="معرض فني" data-category="culture">
+                <div class="card h-100">
+                    <img src="assets/img/event2.png" class="card-img-top" alt="معرض فني">
+                    <div class="card-body">
+                        <h5 class="card-title">معرض فني</h5>
+                        <p class="card-text">25 أكتوبر 2025 — قاعة الفنون</p>
+                        <a href="event.html" class="btn btn-primary">التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Event card 2 -->
+            <div class="col-md-4 event-card" data-title="بطولة رياضية" data-category="sport">
+                <div class="card h-100">
+                    <img src="assets/img/event3.png" class="card-img-top" alt="بطولة رياضية">
+                    <div class="card-body">
+                        <h5 class="card-title">بطولة رياضية</h5>
+                        <p class="card-text">28 أكتوبر 2025 — استاد المدينة</p>
+                        <a href="event.html" class="btn btn-primary">التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Event card 3 -->
+            <div class="col-md-4 event-card" data-title="حفل موسيقي" data-category="music">
+                <div class="card h-100">
+                    <img src="assets/img/event1.png" class="card-img-top" alt="حفل موسيقي">
+                    <div class="card-body">
+                        <h5 class="card-title">حفل موسيقي</h5>
+                        <p class="card-text">20 أكتوبر 2025 — مسرح المدينة</p>
+                        <a href="event.html" class="btn btn-primary">التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-4">
+        <p>© 2025 دليل فعاليات المدينة</p>
+        <p>للتواصل: <a href="mailto:info@example.com">info@example.com</a></p>
+    </footer>
+
+    <button id="scrollTopBtn" class="btn btn-secondary" style="position: fixed; bottom: 20px; left: 20px; display: none;">
+        ↑
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

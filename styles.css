@@ -1,0 +1,36 @@
+/* Custom styles for the City Events Guide website */
+
+body {
+    /* Use a clean Arabic/Latin font. The fallback ensures the site looks good even if the custom font fails to load. */
+    font-family: 'Tajawal', 'Cairo', sans-serif;
+    line-height: 1.6;
+}
+
+main section {
+    margin-bottom: 2rem;
+}
+
+/* Style team members list */
+#team-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* Limit carousel height on small devices */
+.carousel-item img {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+/* Card styles */
+.card-title {
+    font-size: 1.1rem;
+}
+.card-text {
+    font-size: 0.9rem;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f8f9fa;
+    color: #6c757d;
+}
